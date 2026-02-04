@@ -42,6 +42,14 @@ export function Hero() {
                         <a href="#contact" className="text-sm text-[#71717a] line-animated">
                             say hello →
                         </a>
+                        <a
+                            href={personal.resumeUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-[#71717a] line-animated"
+                        >
+                            read resume ↗
+                        </a>
                     </motion.div>
                 </div>
 
