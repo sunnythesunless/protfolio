@@ -7,7 +7,7 @@ export const portfolioData = {
         email: "workwithgonebone@gmail.com",
         location: "India",
         available: true,
-        resumeUrl: "#",
+        resumeUrl: "/kunal.pdf",
     },
 
     social: {

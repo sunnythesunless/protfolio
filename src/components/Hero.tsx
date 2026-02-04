@@ -11,15 +11,8 @@ export function Hero() {
             <div className="hidden lg:grid lg:grid-cols-2 min-h-screen">
                 {/* Left - Name section */}
                 <div className="flex flex-col justify-between p-12 border-r border-white/5">
-                    {/* Top */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <p className="text-xs uppercase tracking-[0.3em] text-[#71717a]">Portfolio</p>
-                        <p className="text-xs uppercase tracking-[0.3em] text-[#71717a]">2024</p>
-                    </motion.div>
+                    {/* Top - spacer */}
+                    <div />
 
                     {/* Center - Giant Name */}
                     <div className="stagger-children">
@@ -120,11 +113,12 @@ export function Hero() {
                     </div>
 
                     <a
-                        href="#projects"
-                        className="group inline-flex items-center gap-4 text-sm uppercase tracking-widest"
+                        href={personal.resumeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 border border-white/20 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all inline-block"
                     >
-                        <span className="w-8 h-px bg-white/30 group-hover:w-16 group-hover:bg-[#a855f7] transition-all duration-500" />
-                        Explore Work
+                        Resume
                     </a>
 
                     {personal.available && (
